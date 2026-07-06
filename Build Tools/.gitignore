@@ -1,0 +1,42 @@
+# General
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+
+# IDE/editor
+.vscode/
+.idea/
+*.iml
+
+# Git metadata inside nested repos (safety)
+**/.git/
+**/.git.backup/
+
+# Gradle/Java build outputs
+**/.gradle/
+**/build/
+**/out/
+**/target/
+**/.classpath
+**/.project
+**/.settings/
+
+# Test and coverage artifacts
+**/reports/
+**/test-results/
+**/coverage/
+
+# Binary artifacts
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar
+*.gz
+
+# Large generated files
+*.bin
+*.idx
