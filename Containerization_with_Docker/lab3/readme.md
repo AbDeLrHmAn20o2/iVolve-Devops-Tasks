@@ -25,7 +25,6 @@ cd Docker-1
 
 ### Screenshot
 
-> Insert Screenshot Here
 
 ![Step1](screenshots/clone.png)
 
@@ -38,7 +37,6 @@ Create a file named **Dockerfile** in the project root.
 
 ### Screenshot
 
-> Insert Screenshot Here
 
 ![Step2](screenshots/cat.png)
 
@@ -54,7 +52,6 @@ docker build -t app1 .
 
 ### Screenshot
 
-> Insert Screenshot Here
 
 ![Step3](screenshots/build.png)
 
@@ -77,7 +74,6 @@ app1         latest   xxxxxxxxx     1.2GB
 
 ### Screenshot
 
-> Insert Screenshot Here
 
 ![Step4](screenshots/image.png)
 
@@ -90,7 +86,6 @@ Run the application container.
 
 ### Screenshot
 
-> Insert Screenshot Here
 
 ![Step5](screenshots/create_container.png)
 
@@ -113,7 +108,6 @@ curl http://localhost:8080
 
 ### Screenshot
 
-> Insert Screenshot Here
 
 ![Step6](screenshots/curl.png)
 
@@ -129,7 +123,6 @@ docker rm container1
 
 ### Screenshot
 
-> Insert Screenshot Here
 
 ![Step7](screenshots/stop.png)
 
