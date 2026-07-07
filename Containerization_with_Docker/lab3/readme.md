@@ -1,6 +1,7 @@
 # Lab 3: Run Java Spring Boot App in a Docker Container
 
 ## Objective
+
 Run a Java Spring Boot application inside a Docker container using a Maven base image with Java 17.
 
 ---
@@ -23,8 +24,6 @@ cd Docker-1
 ```
 
 ### Screenshot
-
-
 ![Step1](screenshots/clone.png)
 
 ---
@@ -33,10 +32,7 @@ cd Docker-1
 
 Create a file named **Dockerfile** in the project root.
 
-
 ### Screenshot
-
-
 ![Step2](screenshots/cat.png)
 
 ---
@@ -50,8 +46,6 @@ docker build -t app1 .
 ```
 
 ### Screenshot
-
-
 ![Step3](screenshots/build.png)
 
 ---
@@ -72,8 +66,6 @@ app1         latest   xxxxxxxxx     1.2GB
 ```
 
 ### Screenshot
-
-
 ![Step4](screenshots/image.png)
 
 ---
@@ -82,14 +74,10 @@ app1         latest   xxxxxxxxx     1.2GB
 
 Run the application container.
 
-
 ### Screenshot
-
-
 ![Step5](screenshots/create_container.png)
 
 ---
-
 
 # Step 6: Test the Application
 
@@ -106,12 +94,9 @@ curl http://localhost:8080
 ```
 
 ### Screenshot
-
-
 ![Step6](screenshots/curl.png)
 
 ---
-
 
 # Step 7: Stop & Remove the Container
 
@@ -121,12 +106,9 @@ docker rm container1
 ```
 
 ### Screenshot
-
-
 ![Step7](screenshots/stop.png)
 
 ---
-
 
 # Project Structure
 
