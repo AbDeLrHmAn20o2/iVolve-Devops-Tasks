@@ -7,9 +7,8 @@ Run a Java Spring Boot application inside a Docker container using a Maven base 
 
 # Prerequisites
 
-- Docker Desktop
+- Docker
 - Git
-- Internet Connection
 
 ---
 
