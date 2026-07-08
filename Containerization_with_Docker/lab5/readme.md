@@ -112,7 +112,7 @@ docker ps
 
 ### Screenshot
 
-![Step7](screenshots/run.png)
+![Step7](screenshots/ps.png)
 ---
 
 # Step 8: Test the Application
