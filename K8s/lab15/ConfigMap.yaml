@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nodejs-config
+data:
+  APP_NAME: "NodeJS App"
+  PORT: "3000"
