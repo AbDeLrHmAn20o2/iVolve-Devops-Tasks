@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nodejs-app
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: nodejs-app
+
+  template:
+    metadata:
+      labels:
+        app: nodejs-app
+
+    spec:
+      containers:
+      - name: nodejs-app
+        image: abdelrahman20o2/kubernets-app-app:latest
+
+        ports:
+        - containerPort: 3000
+
+        resources:
+          requests:
+            cpu: "1"
+            memory: "1Gi"
+
+          limits:
+            cpu: "2"
+            memory: "2Gi"
