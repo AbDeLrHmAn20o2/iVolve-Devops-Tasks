@@ -1,0 +1,44 @@
+@Library('jenkins-lib') _
+
+
+pipeline {
+
+
+agent {
+
+label 'docker'
+
+}
+
+
+stages {
+
+
+stage('Run Shared Library'){
+
+
+steps{
+
+
+script{
+
+
+buildApp()
+
+buildImage()
+
+deployK8s()
+
+
+}
+
+}
+
+
+}
+
+
+}
+
+
+}
