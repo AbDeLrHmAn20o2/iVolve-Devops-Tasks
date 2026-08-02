@@ -1,0 +1,7 @@
+---
+- name: Install MySQL on EC2
+  hosts: tag_db
+  become: yes
+
+  roles:
+    - mysql
