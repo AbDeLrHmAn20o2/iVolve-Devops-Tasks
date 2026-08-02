@@ -1,0 +1,9 @@
+---
+- name: Configure DevOps Tools
+  hosts: local
+  connection: local
+  become: yes
+
+  roles:
+    - docker
+    - kubectl
