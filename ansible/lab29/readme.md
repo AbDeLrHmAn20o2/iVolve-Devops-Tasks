@@ -37,8 +37,6 @@ lab29/
 
 Store the database credentials in `vars/db.yml`.
 
-![Vault Variables](screenshots/01-vault-file.png)
-
 ---
 
 ### 2. Encrypt the Variables File
@@ -46,8 +44,6 @@ Store the database credentials in `vars/db.yml`.
 ```bash
 ansible-vault encrypt vars/db.yml
 ```
-
-![Vault Encrypt](screenshots/02-vault-encrypt.png)
 
 ---
 
@@ -60,8 +56,6 @@ The playbook performs the following tasks:
 - Create the **iVolve** database.
 - Create a database user.
 - Grant all privileges on the database.
-
-![Playbook](screenshots/03-playbook.png)
 
 ---
 
@@ -77,8 +71,6 @@ ansible-playbook -i inventory playbook.yml --ask-vault-pass
 ansible-playbook -i inventory playbook.yml --ask-become-pass --ask-vault-pass
 ```
 
-![Run Playbook](screenshots/04-run-playbook.png)
-
 ---
 
 ### 5. Verify MySQL Service
@@ -86,8 +78,6 @@ ansible-playbook -i inventory playbook.yml --ask-become-pass --ask-vault-pass
 ```bash
 sudo systemctl status mysql
 ```
-
-![MySQL Status](screenshots/05-mysql-status.png)
 
 ---
 
@@ -101,8 +91,6 @@ sudo mysql
 SHOW DATABASES;
 ```
 
-![Databases](screenshots/06-show-databases.png)
-
 ---
 
 ### 7. Login with the Created User
@@ -114,8 +102,6 @@ mysql -u ivolve -p
 ```sql
 SHOW DATABASES;
 ```
-
-![Database User](screenshots/07-login-user.png)
 
 ---
 
