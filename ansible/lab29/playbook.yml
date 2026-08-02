@@ -1,0 +1,36 @@
+---
+- name: Configure MySQL Server
+  hosts: db
+  become: yes
+
+  vars_files:
+    - vars/db.yml
+
+  tasks:
+
+    - name: Install MySQL
+      apt:
+        name:
+          - mysql-server
+          - python3-pymysql
+        state: present
+        update_cache: yes
+
+    - name: Start MySQL
+      service:
+        name: mysql
+        state: started
+        enabled: yes
+
+    - name: Create Database
+      community.mysql.mysql_db:
+        name: "{{ mysql_database }}"
+        state: present
+
+    - name: Create User
+      community.mysql.mysql_user:
+        name: "{{ mysql_user }}"
+        password: "{{ mysql_password }}"
+        priv: "{{ mysql_database }}.*:ALL"
+        host: "%"
+        state: present
